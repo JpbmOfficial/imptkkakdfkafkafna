@@ -7,18 +7,6 @@ const bot = new Discord.Client({disableEveryone: true});
 bot.commands = new Discord.Collection();
 let purple = botconfig.purple;
 const prefix = 'i!';
-const http = require("http");
-const express = require("express");
-const app = express();
-app.get("/", (request, response) => {
-  console.log(Date.now() + " Ping Received!");
-  response.sendStatus(200);
-});
-app.listen(8080);
-setInterval(() => {
-  http.get("http://${process.env.PROJECT_DOMAIN}.glitch.me/");
-}, 280000);
-
 
 
 fs.readdir("./commands/", (err, files) => {
