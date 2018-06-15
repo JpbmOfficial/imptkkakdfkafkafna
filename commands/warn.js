@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 const ms = require("ms");
-let warns = JSON.parse(fs.readFileSync("./warnings.json", "utf8"));
+
 
 module.exports.run = async (bot, message, args) => {
 
@@ -12,15 +12,7 @@ module.exports.run = async (bot, message, args) => {
   if(wUser.hasPermission("MANAGE_MESSAGES")) return message.reply("Please remind, you can't warn users that have manage messages permission!");
   let reason = args.join(" ").slice(22);
 
-  if(!warns[wUser.id]) warns[wUser.id] = {
-    warns: 0
-  };
-
-  warns[wUser.id].warns++;
-
-  fs.writeFile("./warnings.json", JSON.stringify(warns), (err) => {
-    if (err) console.log(err)
-  });
+ 
 
 
   if(!reason) return message.reply("You must write the reason.");
@@ -31,7 +23,6 @@ module.exports.run = async (bot, message, args) => {
   .setColor("#fc6400")
   .addField("Warned User", `<@${wUser.id}>`)
   .addField("Warned In", message.channel)
-  .addField("Number of Warnings", warns[wUser.id].warns)
   .addField("Reason", reason);
 
  
