@@ -24,7 +24,6 @@ if(message.member.hasPermission("MANAGE_MESSAGES")){
     .addField("say","Usage: i!say <impt is sexy>" )
     .addField("tempmute","Usage: i!tempmute <user> <time>" )
     .addField("warn","Usage: i!warn <user> <reason>" )
-    .addField("warnlevel","Usage: i!warnlevel <user> " )
     .addField("unban","Usage: i!unban <user id> <reason> IT'S IMPORTANT YOU INCLUDE THE ID!" )
     .addField("lockdown","Usage: i!lockdown <time> ||!lockdown unlock" );
 
