@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     let helpembed = new Discord.RichEmbed()
     .setDescription("Help Menu")
     .setColor("RANDOM")
-    .addField("Member Commands", "help, serverinfo, botinfo, userinfo, report, quiz, dog, weather, emojis, figlet, google, hug, bugreporting, topinvites, invite, jokes, trump, kiss, hug, pat, luckynumber, maths, npm, poll, quiz, reverse, stats, translate, ping")
+    .addField("Member Commands", "help, serverinfo, botinfo, userinfo, nsfwhelp, report, quiz, dog, weather, emojis, figlet, google, hug, bugreporting, topinvites, invite, jokes, trump, kiss, hug, pat, luckynumber, maths, npm, poll, quiz, reverse, stats, translate, ping")
   
     .setFooter("Type i!help<command> to have help");
 
