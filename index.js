@@ -28,7 +28,7 @@ fs.readdir("./commands/", (err, files) => {
 bot.on("ready", async () => {
   
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers !`);
-  bot.user.setActivity(`with ${bot.guilds.size} servers and ${bot.users.size} users`, {type: "PLAYING"});
+  bot.user.setActivity(`Bye Discord! In days or weeks..`, {type: "PLAYING"});
 
 });
 
