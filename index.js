@@ -28,7 +28,7 @@ fs.readdir("./commands/", (err, files) => {
 bot.on("ready", async () => {
   
   console.log(`${bot.user.username} is online on ${bot.guilds.size} servers !`);
-  bot.user.setActivity(`Bye Discord..`, {type: "PLAYING"});
+  bot.user.setActivity(`on ${bot.guilds.size} with ${members.guilds.size}`, {type: "PLAYING"});
 
 });
 
@@ -110,7 +110,6 @@ if(message.content.includes("impted")) {
   message.channel.send("Impt is coming up");
   message.channel.send("wait what is impt");
   message.channel.send("did you mean impted?");
-  message.channel.send("you got impted");
 return;
      
 }
