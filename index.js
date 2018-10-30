@@ -57,10 +57,6 @@ bot.on("guildMemberAdd", async member => {
 
   let welcomechannel = member.guild.channels.find(`name`, "welcome-goodbye");
   welcomechannel.send(`LOOK OUT EVERYONE! ${member} has joined the paradise!`);
-
-  var role  = member.guild.roles.find('name',	 'Sexy');
-
-  member.addRole(role)
 });
 
 bot.on("guildMemberRemove", async member => {
@@ -68,7 +64,7 @@ bot.on("guildMemberRemove", async member => {
   console.log(`${member.id} left the server.`);
 
   let welcomechannel = member.guild.channels.find(`name`, "welcome-goodbye");
-  welcomechannel.send(`Bad Decision..! ${member} has left the paradise...`);
+  welcomechannel.send(`Sad to see that ${member} has left...`);
 
 });
 
