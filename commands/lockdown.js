@@ -24,7 +24,7 @@ exports.run = (client, message, args) => {
 
         client.lockit[message.channel.id] = setTimeout(() => {
           message.channel.overwritePermissions(message.guild.id, {
-            SEND_MESSAGES: null
+            SEND_MESSAGES: true
           }).then(message.channel.sendMessage('Lockdown lifted.')).catch(console.error);
           delete client.lockit[message.channel.id];
         }, ms(time));
