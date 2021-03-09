@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     .setThumbnail(bicon)
     .addField("Bot Name", bot.user.username)
     .addField("Created On", `${moment.utc(bot.user.createdAt).format('dddd, MMMM Do YYYY, HH:mm:ss')}`)
-    .addField("Created By", "impt#2091");
+    .addField("Created By", "switchblades#0920");
 
     message.channel.send(botembed);
 }
