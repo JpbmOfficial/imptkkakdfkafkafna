@@ -47,7 +47,7 @@ bot.on('guildCreate', async guild => {
 
 let SendChannel = guild.channels.find("name", "general") || guild.channels.find("name", "chat");
 
- SendChannel.send('Hey! I am a bot from impt#2091. \nMy normal prefix is ***i!***. To get commands list, type i!help. \nDid you found any bug? Warn us by typing ***i!bugreporting <bug>*** or by joining our support server \nhttps://discord.gg/S6A44Dq. \nTo have full access to the bot, please create a channel named ***mod-log***, ***admins*** and ***welcome-goodbye***, and also create *Sexy* role.')
+ SendChannel.send('Hey! I am a bot from switchblades#0920. \nMy normal prefix is ***i!***. To get commands list, type i!help. \nDid you found any bug? Warn us by typing ***i!bugreporting <bug>*** or by joining our support server \nhttps://discord.gg/S6A44Dq. \nTo have full access to the bot, please create a channel named ***mod-log***, ***admins*** and ***welcome-goodbye***, and also create *Sexy* role.')
 
 });
 
