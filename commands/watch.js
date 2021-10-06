@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 module.exports.run = (client, message, args) => {
-  if (message.author.id !== ('390960333314850817')) return message.channel.send("Huh.");
+  if (message.author.id !== ('390960333314850817')) return message.channel.send("You aren't my owner, sorry.");
   const status = args.join(' ');
   if (status.length === 0) {
     const embed = new Discord.RichEmbed()
