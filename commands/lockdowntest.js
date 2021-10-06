@@ -1,4 +1,4 @@
-const settings = require('../botconfig.js');
+const settings = require('../botconfig.json');
 exports.run = (client, message, args) => { 
   if (!message.member.hasPermission('ADMINISTRATOR')) return;
   if (!client.lockit) client.lockit = [];
