@@ -99,12 +99,6 @@ return;
      
 }
 
-  if(message.content.includes("a")) {
-    message.channel.send("cala a boca macaco")
-  return;
-
-}
-
 if(message.content.includes("puta")) {
   message.channel.send("Nome feminino.")
   message.channel.send("Mulher que se prostitui.")
