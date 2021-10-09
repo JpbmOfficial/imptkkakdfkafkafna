@@ -106,28 +106,28 @@ return;
 }
 
 if(message.content.includes("puta")) {
-  message.channel.send("Nome feminino.");
-  message.channel.send("Mulher que se prostitui.");
-  message.channel.send("Mulher que tem relações sexuais com muitos homems.");
-  message.channel.send("Nome mais formal: prostituta.");
-  message.channel.send("Sinónimos: colareja, marafona, meretriz, michela.");
+  message.channel.send("Nome feminino.")
+  message.channel.send("Mulher que se prostitui.")
+  message.channel.send("Mulher que tem relações sexuais com muitos homems.")
+  message.channel.send("Nome mais formal: prostituta.")
+  message.channel.send("Sinónimos: colareja, marafona, meretriz, michela.")
 return;
      
 }
   if(message.content.includes("prima")) {
-  message.channel.send("Nome feminino.");
-  message.channel.send("Pessoa em relação aos filhos do seu tio ou da sua tia ou aos respetivos descendentes");
-  message.channel.send("A primeira e a mais delgada corda de alguns instrumentos musicais");
-  message.channel.send("Na liturgia católica, primeira das horas canónicas diurnas, rezada depois de laudes, tradicionalmente às seis da manhã");
-  message.channel.send(`Nome mais conhecido por ser prima de <@${message.author.id}>.`);
+  message.channel.send("Nome feminino.")
+  message.channel.send("Pessoa em relação aos filhos do seu tio ou da sua tia ou aos respetivos descendentes")
+  message.channel.send("A primeira e a mais delgada corda de alguns instrumentos musicais")
+  message.channel.send("Na liturgia católica, primeira das horas canónicas diurnas, rezada depois de laudes, tradicionalmente às seis da manhã")
+  message.channel.send(`Nome mais conhecido por ser prima de <@${message.author.id}>.`)
 return;
   }
   if(message.content.includes("putinha")) {
-  message.channel.send("Nome feminino.");
-  message.channel.send("Mulher que se prostitui.");
-  message.channel.send("Mulher que tem relações sexuais com muitos homems.");
-  message.channel.send("Nome mais formal: prostituta.");
-  message.channel.send("Sinónimos: colareja, marafona, meretriz, michela.");
+  message.channel.send("Nome feminino.")
+  message.channel.send("Mulher que se prostitui.")
+  message.channel.send("Mulher que tem relações sexuais com muitos homems.")
+  message.channel.send("Nome mais formal: prostituta.")
+  message.channel.send("Sinónimos: colareja, marafona, meretriz, michela.")
 return;
      
 }
