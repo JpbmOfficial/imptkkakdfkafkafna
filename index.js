@@ -122,6 +122,15 @@ return;
   message.channel.send(`Nome mais conhecido por ser prima de <@${message.author.id}>.`);
 return;
   }
+  if(message.content.includes("putinha")) {
+  message.channel.send("Nome feminino.");
+  message.channel.send("Mulher que se prostitui.");
+  message.channel.send("Mulher que tem relações sexuais com muitos homems.");
+  message.channel.send("Nome mais formal: prostituta.");
+  message.channel.send("Sinónimos: colareja, marafona, meretriz, michela.");
+return;
+     
+}
   
 
  
