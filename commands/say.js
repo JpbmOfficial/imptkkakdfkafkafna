@@ -7,7 +7,7 @@ const Discord = require("discord.js");
 
 //if (!authorized.includes(message.author.id)){
    // return message.channel.send("you do not have permissions");
-}
+//}
 
 module.exports.run = async (bot, message, args) => {
      // if (!authorized.includes(message.author.id)) return message.channel.send(`<@${message.author.id}>, get fucked retarded.`)
