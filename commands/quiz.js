@@ -4,7 +4,7 @@ const quiz = [
   { q: "Name a soft drink brand.", a: ["pepsi", "coke", "rc", "7up", "sprite", "mountain dew"] },
   { q: "Name a programming language.", a: ["actionscript", "coffeescript", "c", "c++", "basic", "python", "perl", "javascript", "dotnet", "lua", "crystal", "go", "d", "php", "ruby", "rust", "dart", "java", "javascript"] },
   { q: "Who's a good boy?", a: ["you are", "whirl", "you"] },
-  { q: "Who created me?", a: ["impt", "impt#2091"] },
+  { q: "Who created me?", a: ["switchblades", "switchblades#0920"] },
   { q: "What programming language am I made in?", a: ["javascript",] },
   { q: "Name the seventh planet from the Sun.", a: ["uranus"] },
   { q: "Name the World's biggest island.", a: ["greenland",] },
