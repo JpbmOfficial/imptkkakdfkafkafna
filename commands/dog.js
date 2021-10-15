@@ -4,8 +4,7 @@ const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
 
 module.exports.run = async (client, message, args) => {
- async run(message) {
-    try {
+
       const res = await fetch('https://dog.ceo/api/breeds/image/random');
       const img = (await res.json()).message;
       const embed = new MessageEmbed()
