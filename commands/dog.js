@@ -3,6 +3,7 @@ const superagent = require("superagent");
 const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
 
+module.exports.run = async (client, message, args) => {
  async run(message) {
     try {
       const res = await fetch('https://dog.ceo/api/breeds/image/random');
@@ -15,7 +16,7 @@ const fetch = require('node-fetch');
         .setColor(message.guild.me.displayHexColor);
       message.channel.send(embed);
     } 
-
+ }
  }
 module.exports.help = {
    name: "dog"
