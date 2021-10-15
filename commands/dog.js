@@ -15,8 +15,8 @@ module.exports.run = async (client, message, args) => {
         .setColor(message.guild.me.displayHexColor);
       message.channel.send(embed);
     } 
- }
- }
+ 
+ 
 module.exports.help = {
    name: "dog"
 }
