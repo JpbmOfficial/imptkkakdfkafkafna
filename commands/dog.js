@@ -1,5 +1,7 @@
 const Discord = require("discord.js");
 const superagent = require("superagent");
+const { MessageEmbed } = require('discord.js');
+const fetch = require('node-fetch');
 
  async run(message) {
     try {
