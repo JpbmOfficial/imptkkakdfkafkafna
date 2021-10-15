@@ -1,22 +1,21 @@
 const Discord = require("discord.js");
 const superagent = require("superagent");
-const { MessageEmbed } = require('discord.js');
-const fetch = require('node-fetch');
 
-module.exports.run = async (client, message, args) => {
+module.exports.run = async (bot,message,args) => {
 
-      const res = await fetch('https://dog.ceo/api/breeds/image/random');
-      const img = (await res.json()).message;
-      const embed = new MessageEmbed()
-        .setTitle('🐶  Woof!  🐶')
-        .setImage(img)
-        .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
-        .setTimestamp()
-        .setColor(message.guild.me.displayHexColor);
-      message.channel.send(embed);
-    } 
- 
- 
+  let {body} = await superagent
+  .get(`https://random.dog/woof.json`);
+
+  let dogembed = new Discord.RichEmbed()
+  .setColor("#5780c1")
+  .setTitle("Dog")
+  .setImage(body.url);
+
+  message.channel.send(dogembed);
+
+
+
+}
 module.exports.help = {
    name: "dog"
 }
