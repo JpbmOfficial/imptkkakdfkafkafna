@@ -1,11 +1,10 @@
 const Discord = require("discord.js");
-const client = Discord.Client()
 
 module.exports.run = async (bot, message, args) => {
     let pingembed = new Discord.RichEmbed()
     .setThumbnail(bot.displayAvatarURL)
     .setColor("#15f153")
-    .addField("Ping", `${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`)
+    .addField("Ping", `${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(ws.ping)}ms`)
 // message.channel.send(`🏓Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`)
 //.addField("Ping", `${message.createdTimestamp - Date.now()}`)
 
