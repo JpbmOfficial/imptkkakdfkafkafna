@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const client = discord.Client()
+const client = Discord.Client()
 
 module.exports.run = async (bot, message, args) => {
     let pingembed = new Discord.RichEmbed()
